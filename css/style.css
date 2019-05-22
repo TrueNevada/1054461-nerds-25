@@ -52,6 +52,11 @@ a.page-active {
   text-decoration-color: #fb565a;
 }
 
+.almost-header {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
 .features-list {
   list-style: none;
 }
@@ -65,19 +70,23 @@ a.page-active {
   line-height: 30px;
 }
 
-a.button-order-button-1 {
+.feature-item a,
+.button-order-button-1 a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   background-color: #fb565a;
 }
 
-a.button-order-button-1:hover,
-a.button-order-button-1:focus {
+.feature-item a:hover,
+.feature-item a:focus,
+.button-order-button-1 a:hover,
+.button-order-button-1 a:focus {
   background-color: #e74246;
 }
 
-a.button-order-button-1:active {
+.feature-item a:active,
+.button-order-button-1 a:active {
   color: #e37376;
   background-color: #d7373b;
 }
@@ -161,4 +170,41 @@ button.button:focus {
 button.button:active {
   color: #e37376;
   background-color: #d7373b;
+}
+
+.net-filter {
+  list-style: none;
+}
+
+.features-filter {
+  list-style: none;
+}
+
+.filters button,
+.button-show button {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-order {
+  color: #000000;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.catalog-order h3 {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-order p {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  color: #666666;
 }

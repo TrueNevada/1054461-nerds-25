@@ -29,12 +29,14 @@
         </li>
       </ul>
     </nav>
-    <h1>Магазин готовых шаблонов</h1>
+    <div class="almost-header">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
   </header>
   <main>
     <section class="filters">
       <h3 class="net">Сетка</h3>
-      <ul>
+      <ul class="net-filter">
         <li>
           <label class="net-choose">
             <input type="checkbox" name="adaptive">
@@ -55,7 +57,7 @@
         </li>
       </ul>
       <h3 class="features">Особенности</h3>
-      <ul>
+      <ul class="features-filter">
         <li>
           <label class="features-choose">
             <input type="checkbox" name="slider">
@@ -96,7 +98,7 @@
           <a href="sedona.html">
             <img src="img/jpeg/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов Sedona">
           </a>
-          <div>
+          <div class="catalog-order">
             <h3>Sedona</h3>
             <p>Информационный сайт для туристов</p>
             <a class="button" href="order.html">9900 руб.</a>
@@ -106,7 +108,7 @@
           <a href="pink.html">
             <img src="img/jpeg/img-pink.jpg" width="360" height="576" alt="Приложение Pink">
           </a>
-          <div>
+          <div class="catalog-order">
             <h3>Pink App</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="button" href="order.html">9900 руб.</a>
@@ -116,7 +118,7 @@
           <a href="borodinski.html">
             <img src="img/jpeg/img-barbershop.jpg" width="360" height="576" alt="Сайт барбершопа Бородинский">
           </a>
-          <div>
+          <div class="catalog-order">
             <h3>Barbershop</h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <a class="button" href="order.html">9900 руб.</a>
@@ -126,7 +128,7 @@
           <a href="mishka.html">
             <img src="img/jpeg/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек Mishka">
           </a>
-          <div>
+          <div class="catalog-order">
             <h3>Mishka</h3>
             <p>Интернет-магазин вязаных игрушек</p>
             <a class="button" href="order.html">9900 руб.</a>
@@ -136,7 +138,7 @@
           <a href="aplus.html">
             <img src="img/jpeg/img-aplus.jpg" width="360" height="576" alt="Учебный центр А-Плюс">
           </a>
-          <div>
+          <div class="catalog-order">
             <h3>A Plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
             <a class="button" href="order.html">9900 руб.</a>
@@ -146,7 +148,7 @@
           <a href="kvast.html">
             <img src="img/jpeg/img-kvast.jpg" width="360" height="576" alt="Магазин напитков Кваст">
           </a>
-          <div>
+          <div class="catalog-order">
             <h3>Кваст</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
             <a class="button" href="order.html">9900 руб.</a>
@@ -187,6 +189,7 @@
           <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
         </p>
         <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
     <section class="social-footer">
