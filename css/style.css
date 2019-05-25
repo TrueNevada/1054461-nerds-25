@@ -15,11 +15,14 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  margin-bottom: 80px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-
   background-color: #eeeeee;
 }
 
@@ -45,20 +48,15 @@ a {
   color: #a6a6a6;
 }
 
-a.page-active {
+.page-active {
   color: #000000;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #fb565a;
+  border-bottom: solid;
+  border-bottom-color: #fb565a;
 }
 
 .almost-header {
   text-align: center;
   background-color: #eeeeee;
-}
-
-.features-list {
-  list-style: none;
 }
 
 .feature-item {
@@ -68,61 +66,6 @@ a.page-active {
 .feature-item h3 {
   font-size: 24px;
   line-height: 30px;
-}
-
-.feature-item a,
-.button-order-button-1 a {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #fb565a;
-}
-
-.feature-item a:hover,
-.feature-item a:focus,
-.button-order-button-1 a:hover,
-.button-order-button-1 a:focus {
-  background-color: #e74246;
-}
-
-.feature-item a:active,
-.button-order-button-1 a:active {
-  color: #e37376;
-  background-color: #d7373b;
-}
-
-a.button-order-button-2 {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #00ca74;
-}
-
-a.button-order-button-2:hover,
-a.button-order-button-2:focus {
-  background-color: #00bc6c;
-}
-
-a.button-order-button-2:active {
-  color: #4dc491;
-  background-color: #00bc6c;
-}
-
-a.button-order-button-3 {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #efc84a;
-}
-
-a.button-order-button-3:hover,
-a.button-order-button-3:focus {
-  background-color: #eab534;
-}
-
-a.button-order-button-3:active {
-  color: #edc265;
-  background-color: #e5a722;
 }
 
 .write-us {
@@ -138,38 +81,87 @@ a.button-order-button-3:active {
   color: #707070;
 }
 
-a.button {
+.button {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #fb565a
+  background-color: #fb565a;
+  border: solid;
+  border-color: #fb565a;
+  border-radius: 2px;
 }
 
-a.button:hover,
-a.button:focus {
+.button:hover,
+.button:focus {
   background-color: #e74246;
+  border-color: #e74246;
 }
 
-a.button:active {
+.button:active {
   color: #e37376;
   background-color: #d7373b;
+  border-color: #d7373b;
 }
 
-button.button {
+.green-button {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #fb565a
+  background-color: #00ca74;
+  border: solid;
+  border-color: #00ca74;
 }
 
-button.button:hover,
-button.button:focus {
-  background-color: #e74246;
+.green-button:hover,
+.green-button:focus {
+  background-color: #00bc6c;
+  border-color: #00bc6c;
 }
 
-button.button:active {
-  color: #e37376;
-  background-color: #d7373b;
+.green-button:active {
+  color: #4dc491;
+  background-color: #00aa62;
+  border-color: #00aa62;
+}
+
+.yellow-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #efc84a;
+  border-color: #efc84a;
+}
+
+.yellow-button:hover,
+.yellow-button:focus {
+  background-color: #eab534;
+  border-color: #eab534;
+}
+
+.yellow-button:active {
+  color: #edc265;
+  background-color: #e5a722;
+  border-color: #e5a722;
+}
+
+.show-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+}
+
+.show-button:hover,
+.show-button:focus {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+}
+
+.show-button:active {
+  color: #959595;
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
 }
 
 .net-filter {
@@ -178,12 +170,6 @@ button.button:active {
 
 .features-filter {
   list-style: none;
-}
-
-.filters button,
-.button-show button {
-  color: #000000;
-  background-color: #eeeeee;
 }
 
 .catalog-list {
