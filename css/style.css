@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  margin-bottom: 80px;
-}
-
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -193,4 +189,48 @@ a {
   line-height: 18px;
   text-transform: none;
   color: #666666;
+}
+
+.net-filter input[type="radio"] {
+  opacity: 0;
+}
+
+.net-filter label::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 5px solid;
+  border-radius: 50%;
+  border-color: #b8b8b8;
+}
+
+.net-filter label::after{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: #b8b8b8;
+  background-color: #b8b8b8;
+}
+
+.net-filter label {
+  position: relative;
+}
+.net-filter label::before,
+.net-filter label::after {
+  position: absolute;
+
+}
+
+.net-filter label::before {
+  left: -40px;
+  bottom: 0px;
+}
+
+.net-filter label::after {
+  left: -31px;
+  bottom: 10px;
 }
