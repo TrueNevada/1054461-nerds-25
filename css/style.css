@@ -15,16 +15,47 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #eeeeee;
+  min-height: 355px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   background-color: #eeeeee;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-.site-navigation,
+.main-header-logo {
+  order: 0;
+  width: 160px;
+  height: 65px;
+  margin-top: 49px;
+  margin-left: 140px;
+  margin-right: 200px;
+}
+
+.site-navigation {
+  width: auto;
+  list-style: none;
+  margin-top: 82px;
+  margin-bottom: 100px;
+  margin-right: 245px;
+  align-items: center;
+}
+
 .user-navigation {
   list-style: none;
+  margin-top: 82px;
+  margin-left: auto;
+  margin-right: 140px;
 }
 
 .site-navigation a,
@@ -50,13 +81,43 @@ a {
   border-bottom-color: #fb565a;
 }
 
+.site-navigation li,
+.user-navigation li {
+  display: inline-block;
+  padding-left: 47px;
+}
+
 .almost-header {
+  text-transform: none;
   text-align: center;
   background-color: #eeeeee;
+  width: auto;
+  align-items: center;
+  margin-bottom: 117px;
+  margin-left: 359px;
+  margin-right: 359px;
+}
+
+.container {
+  width: 1160px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .feature-item {
-  text-align: center;
+  width: 300px;
+  text-align: left;
+}
+
+.feature-item p {
+  font-weight: normal;
+  text-transform: none;
+  color: #283136;
 }
 
 .feature-item h3 {
@@ -195,7 +256,7 @@ a {
   opacity: 0;
 }
 
-.net-filter label::before{
+.net-filter label::before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -205,7 +266,7 @@ a {
   border-color: #b8b8b8;
 }
 
-.net-filter label::after{
+.net-filter label::after {
   content: "";
   display: inline-block;
   width: 10px;
@@ -219,6 +280,7 @@ a {
 .net-filter label {
   position: relative;
 }
+
 .net-filter label::before,
 .net-filter label::after {
   position: absolute;
@@ -233,4 +295,8 @@ a {
 .net-filter label::after {
   left: -31px;
   bottom: 10px;
+}
+
+.modal .modal-map {
+  width: 1440px;
 }
