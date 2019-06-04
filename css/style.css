@@ -267,6 +267,23 @@ a {
   margin-bottom: 40px;
 }
 
+.studio {
+  width: 660px;
+  text-align: left;
+}
+
+.studio h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.studio p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+}
+
 .write-us {
   font-size: 18px;
   line-height: 30px;
@@ -340,6 +357,7 @@ a {
   background-image: url("../img/svg/browser.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.1;
   top: -41px;
 }
 
