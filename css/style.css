@@ -192,7 +192,7 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
   bottom: 7px;
-  left:10px;
+  left: 10px;
 }
 
 .site-navigation a,
@@ -267,8 +267,17 @@ a {
   margin-bottom: 40px;
 }
 
+.offers {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .studio {
   width: 660px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: left;
 }
 
@@ -278,10 +287,61 @@ a {
 }
 
 .studio p {
-  font-size: 16px;
-  line-height: 24px;
   font-weight: normal;
   color: #283136;
+}
+
+.studio b {
+  text-transform: uppercase;
+}
+
+.studio-offers {
+  list-style: none;
+}
+
+.studio-offers li{
+  font-weight: normal;
+  color: #283136;
+}
+
+.our-features-item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.our-features-item b {
+  margin-top: 41px;
+  text-transform: uppercase;
+}
+
+.our-features-list {
+  width: 360px;
+  margin-top: 49px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.our-features-list li {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #283136;
+}
+
+.our-features-list span {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .write-us {
