@@ -386,6 +386,7 @@ a {
 }
 
 .feature-item p {
+  width: 245px;
   font-weight: normal;
   text-transform: none;
   color: #283136;
@@ -507,6 +508,7 @@ a {
 }
 
 .partner {
+  position: relative;
   opacity: 0.2;
 }
 
@@ -517,19 +519,6 @@ a {
 
 .partner:active {
   opacity: 0.1;
-}
-
-.write-us {
-  font-size: 18px;
-  line-height: 30px;
-  background-color: #ffffff;
-}
-
-.write-us p {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: none;
-  color: #707070;
 }
 
 .filters {
@@ -777,17 +766,22 @@ a {
 .adress-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: absolute;
   bottom: 54px;
   width: 319px;
-  height: 308px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 51px;
   background-color: #ffffff;
   text-align: left;
 }
 
 .adress-block h3 {
+  padding-top: 42px;
+  margin: 0;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -795,11 +789,24 @@ a {
 }
 
 .adress-block p {
+  margin: 0;
+  margin-bottom: 22px;
+  width: 219px;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   text-transform: none;
   color: #666666;
+}
+
+.adress-block p:nth-child(3) {
+  margin: 0;
+}
+
+.adress-block .button {
+  margin-top: 38px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .social-footer {
@@ -853,11 +860,31 @@ a {
   color: #444444;
 }
 
-.separator {
+.splitter {
   display: inline-block;
   width: 1160px;
   height: 2px;
   padding: 0;
   margin: 0;
   background-color: #eeeeee;
+}
+
+.vertical {
+  width: 2px;
+  height: 52px;
+}
+
+.write-us {
+  display: block;
+  width: 960px;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #ffffff;
+}
+
+.write-us p {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  color: #707070;
 }
