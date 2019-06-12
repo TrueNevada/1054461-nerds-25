@@ -53,7 +53,7 @@ a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 175px;
+  padding-top: 100px;
 }
 
 .button {
@@ -519,6 +519,53 @@ a {
 
 .partner:active {
   opacity: 0.1;
+}
+
+.sort-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 283px;
+}
+
+.sort {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-right: 270px;
+}
+
+.sort-type {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  opacity: 0.3;
+}
+
+.sort-type:hover,
+.sort-type:focus {
+  opacity: 0.6;
+}
+
+.sort-type:active {
+  opacity: 1;
+}
+
+.button-up {
+  margin-left: 10px;
 }
 
 .filters {
