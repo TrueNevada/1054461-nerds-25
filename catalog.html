@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header catalog-header">
     <nav class="container main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
@@ -51,44 +51,59 @@
     </section>
     <div class="container inner-page">
       <section class="filters">
-        <h3 class="net">Сетка</h3>
-        <ul class="net-filter">
-          <li class="radio">
-            <input id="radio-1" type="radio" name="filter" value="Адаптивная" checked>
-            <label for="radio-1">Адаптивная</label>
-          </li>
-          <li class="radio">
-            <input id="radio-2" type="radio" name="filter" value="Фиксированная">
-            <label for="radio-2">Фиксированная</label>
-          </li>
-          <li class="radio">
-            <input id="radio-3" type="radio" name="filter" value="Резиновая">
-            <label for="radio-3">Резиновая</label>
-          </li>
-        </ul>
-        <h3 class="features-net">Особенности</h3>
-        <ul class="features-filter">
-          <li class="checkbox">
-            <input id="checkbox-1" type="checkbox" name="slider">
-            <label for="checkbox-1">Слайдер</label>
-          </li>
-          <li class="checkbox">
-            <input id="checkbox-2" type="checkbox" name="block">
-            <label for="checkbox-2">Блок преимуществ</label>
-          </li>
-          <li class="checkbox">
-            <input id="checkbox-3" type="checkbox" name="news">
-            <label for="checkbox-3">Новости</label>
-          </li>
-          <li class="checkbox">
-            <input id="checkbox-4" type="checkbox" name="gallery">
-            <label for="checkbox-4">Галерея</label>
-          </li>
-          <li class="checkbox">
-            <input id="checkbox-5" type="checkbox" name="cart">
-            <label for="checkbox-5">Корзина</label>
-          </li>
-        </ul>
+        <div class="slider-variator">
+          <div class="variator">
+            <input type="range" min="0" max="15000">
+          </div>
+          <div class="variations">
+            <span>От</span>
+            <span>0</span>
+            <span>До</span>
+            <span>15000</span>
+          </div>
+        </div>
+        <div class="net">
+          <h3>Сетка:</h3>
+          <ul class="net-filter">
+            <li class="radio">
+              <input id="radio-1" type="radio" name="filter" value="Адаптивная" checked>
+              <label for="radio-1">Адаптивная</label>
+            </li>
+            <li class="radio">
+              <input id="radio-2" type="radio" name="filter" value="Фиксированная">
+              <label for="radio-2">Фиксированная</label>
+            </li>
+            <li class="radio">
+              <input id="radio-3" type="radio" name="filter" value="Резиновая">
+              <label for="radio-3">Резиновая</label>
+            </li>
+          </ul>
+        </div>
+        <div class="features-net">
+          <h3>Особенности:</h3>
+          <ul class="features-filter">
+            <li class="checkbox">
+              <input id="checkbox-1" type="checkbox" name="slider">
+              <label for="checkbox-1">Слайдер</label>
+            </li>
+            <li class="checkbox">
+              <input id="checkbox-2" type="checkbox" name="block">
+              <label for="checkbox-2">Блок преимуществ</label>
+            </li>
+            <li class="checkbox">
+              <input id="checkbox-3" type="checkbox" name="news">
+              <label for="checkbox-3">Новости</label>
+            </li>
+            <li class="checkbox">
+              <input id="checkbox-4" type="checkbox" name="gallery">
+              <label for="checkbox-4">Галерея</label>
+            </li>
+            <li class="checkbox">
+              <input id="checkbox-5" type="checkbox" name="cart">
+              <label for="checkbox-5">Корзина</label>
+            </li>
+          </ul>
+        </div>
         <button class="button show-button" type="button">Показать</button>
       </section>
       <section class="catalog">
@@ -157,6 +172,12 @@
         </div>
       </section>
     </div>
+    <section class="container pagination">
+      <a class="button switcher" href="catalog.html">1</a>
+      <a class="button switcher" href="page-2.html">2</a>
+      <a class="button switcher" href="page-3.html">3</a>
+      <a class="button switcher" href="next-page.html">Следующая</a>
+    </section>
   </main>
   <footer class="main-footer">
     <section class="adress">

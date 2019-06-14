@@ -172,28 +172,29 @@
       </section>
     </div>
   </footer>
-  <div class="container">
-    <div class="modal">
-      <section class="write-us">
-        <h2>Напишите нам</h2>
-        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="write-us-item">
-            <label for="write-us-name">Ваше имя:</label>
-            <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="write-us-item">
-            <label for="write-us-email">Ваше e-mail:</label>
-            <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
-          </p>
-          <p class="write-us-item">
-            <label for="write-us-text">Напишите нам:</label>
-            <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button">Закрыть</button>
-        </form>
-      </section>
-    </div>
+  <div class="container modal">
+    <section class="write-us">
+      <h2>Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us-item">
+          <h3>Ваше имя:</h3>
+          <label for="write-us-name"><span class="visually-hidden">Ваше имя:</span></label>
+          <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+        </div>
+        <div class="write-us-item">
+          <h3>Ваш e-mail:</h3>
+          <label for="write-us-email"><span class="visually-hidden">Ваше e-mail:</span></label>
+          <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
+        </div>
+        <div class="write-us-item">
+          <h3>Напишите нам:</h3>
+          <label for="write-us-text"><span class="visually-hidden">Напишите нам:</span></label>
+          <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
+        </div>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </section>
   </div>
 </body>
 
