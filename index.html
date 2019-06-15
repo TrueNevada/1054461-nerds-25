@@ -141,7 +141,7 @@
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петерубрг, ул.Б.Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="button" href="write-us.html">Напишите нам</a>
+          <a class="button write-us-link" href="write-us.html">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -172,30 +172,55 @@
       </section>
     </div>
   </footer>
-  <div class="container modal">
+  <div class="modal modal-form">
     <section class="write-us">
-      <h2>Напишите нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="write-us-item">
-          <h3>Ваше имя:</h3>
-          <label for="write-us-name"><span class="visually-hidden">Ваше имя:</span></label>
-          <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
-        </div>
-        <div class="write-us-item">
-          <h3>Ваш e-mail:</h3>
-          <label for="write-us-email"><span class="visually-hidden">Ваше e-mail:</span></label>
-          <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
-        </div>
-        <div class="write-us-item">
-          <h3>Напишите нам:</h3>
-          <label for="write-us-text"><span class="visually-hidden">Напишите нам:</span></label>
-          <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
+        <h2>Напишите нам</h2>
+        <div class="info-input">
+          <div class="write-us-item">
+            <h3>Ваше имя:</h3>
+            <label for="write-us-name"><span class="visually-hidden">Ваше имя:</span></label>
+            <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+          </div>
+          <div class="write-us-item">
+            <h3>Ваш e-mail:</h3>
+            <label for="write-us-email"><span class="visually-hidden">Ваше e-mail:</span></label>
+            <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
+          </div>
+          <div class="write-us-item">
+            <h3>Текст письма:</h3>
+            <label for="write-us-text"><span class="visually-hidden">Текст письма:</span></label>
+            <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
+          </div>
         </div>
         <button class="button" type="submit">Отправить</button>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
     </section>
   </div>
+  <script>
+    var link = document.querySelector(".write-us-link");
+    var popup = document.querySelector(".modal-form");
+    var close = document.querySelector(".modal-close");
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (popup.classList.contains("modal-show")) {
+          evt.preventDefault();
+          popup.classList.remove("modal-show");
+        }
+      }
+    });
+
+  </script>
+
 </body>
 
 </html>
