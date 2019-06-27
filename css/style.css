@@ -464,14 +464,6 @@ a {
   text-align: center;
 }
 
-.our-features-item div {
-  width: 360px;
-  height: 208px;
-  background-image: url("../img/png/nerds-illustration.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .our-features-item b {
   margin-top: 41px;
   text-transform: uppercase;
@@ -504,6 +496,9 @@ a {
 .partners {
   padding-top: 36px;
   padding-bottom: 24px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #eeeeee;
 }
 
 .partners-list {
@@ -512,6 +507,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
 }
 
 .partner {
@@ -526,6 +522,15 @@ a {
 
 .partner:active {
   opacity: 0.1;
+}
+
+.partner+.partner::after {
+  content: " ";
+  position: absolute;
+  left: -57px;
+  width: 2px;
+  height: 52px;
+  background-color: rebeccapurple;
 }
 
 .sort-box {
@@ -1090,20 +1095,6 @@ input[type=range]::-ms-track {
   line-height: 22px;
   font-weight: normal;
   color: #444444;
-}
-
-.splitter {
-  display: inline-block;
-  width: 1160px;
-  height: 2px;
-  padding: 0;
-  margin: 0;
-  background-color: #eeeeee;
-}
-
-.vertical {
-  width: 2px;
-  height: 52px;
 }
 
 .write-us-form {
