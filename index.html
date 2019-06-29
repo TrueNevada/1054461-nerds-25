@@ -34,7 +34,7 @@
       <div class="slider">
         <div class="slides slide1">
           <h3>Долго, дорого, скрупулезно.</h3>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <p>Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
           <a class="button" href="more-info.html">Узнать больше</a>
         </div>
         <div class="slides slide2">
@@ -85,7 +85,7 @@
       </section>
       <section class="offers">
         <div class="studio">
-          <h2>Мы — маленькая, но гордая студия из Краснодара.</h2>
+          <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
             покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
@@ -98,12 +98,19 @@
         <div class="our-features">
           <article class="our-features-item">
             <img src="img/png/nerds-illustration.png" width="360" height="208" alt="цветной логотип Нёрдс">
-            <b>С 2004 года любим точность во всём:</b>
-            <ul class="our-features-list">
-              <li><span>146<sup>%</sup></span><br>Уровень самоотдачи</li>
-              <li><span>100<sup>%</sup></span><br>Соблюдение сроков</li>
-              <li><span>50<sup>%</sup></span><br>Минимальная предоплата</li>
-            </ul>
+            <table>
+              <caption>С 2004 года любим точность во всём:</caption>
+              <tr class="top-slot">
+                <td >146<sup>%</sup></td>
+                <td >100<sup>%</sup></td>
+                <td >50<sup>%</sup></td>
+              </tr>
+              <tr class="bottom-slot">
+                <td>Уровень самотдачи</td>
+                <td>Выполнение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
           </article>
         </div>
       </section>
@@ -130,7 +137,6 @@
       <h2 class="visually-hidden">
         Как добраться
       </h2>
-      <img class="substrate" src="img/jpeg/img-map.jpg" width="1440" height="416">
       <iframe class="contacts-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390"
         allowfullscreen></iframe>
@@ -194,28 +200,8 @@
       </form>
     </section>
   </div>
-  <script>
-    var link = document.querySelector(".write-us-link");
-    var popup = document.querySelector(".modal-form");
-    var close = document.querySelector(".modal-close");
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (popup.classList.contains("modal-show")) {
-          evt.preventDefault();
-          popup.classList.remove("modal-show");
-        }
-      }
-    });
 
-  </script>
+  <script src="js/popup.js"></script>
 
 </body>
 
