@@ -102,7 +102,7 @@
             </li>
           </ul>
         </div>
-        <button class="button show-button" type="button">Показать</button>
+        <button class="button show-button" type="submit">Показать</button>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -190,7 +190,7 @@
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петерубрг, ул.Б.Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="button" href="write-us.html">Напишите нам</a>
+          <a class="button write-us-link" href="write-us.html">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -215,7 +215,7 @@
           </a>
         </div>
         <div class="copyright-footer">
-          <b>Давайте дружить, это выгодно!</b>
+          <h3>Давайте дружить, это выгодно!</h3>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
       </section>
@@ -227,18 +227,16 @@
         <h2>Напишите нам</h2>
         <div class="info-input">
           <div class="write-us-item">
-            <h3>Ваше имя:</h3>
-            <label for="write-us-name"><span class="visually-hidden">Ваше имя:</span></label>
+            <label for="write-us-name">Ваше имя:</label>
             <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
           </div>
           <div class="write-us-item">
-            <h3>Ваш e-mail:</h3>
-            <label for="write-us-email"><span class="visually-hidden">Ваше e-mail:</span></label>
+
+            <label for="write-us-email">Ваш e-mail:</label>
             <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
           </div>
           <div class="write-us-item">
-            <h3>Текст письма:</h3>
-            <label for="write-us-text"><span class="visually-hidden">Текст письма:</span></label>
+            <label for="write-us-text">Текст письма:</label>
             <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
           </div>
         </div>
@@ -247,6 +245,9 @@
       </form>
     </section>
   </div>
+
+  <script src="js/popup.js"></script>
+
 </body>
 
 </html>
