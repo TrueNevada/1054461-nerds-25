@@ -49,6 +49,7 @@
     </section>
     <div class="container inner-page">
       <section class="filters">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="slider-variator">
           <div class="variator">
             <input type="range" min="0" max="15000">
@@ -103,6 +104,7 @@
           </ul>
         </div>
         <button class="button show-button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -167,15 +169,15 @@
               <a class="button" href="order.html">9900 руб.</a>
             </div>
           </article>
+          <div class="pagination">
+            <a class="button switcher" href="catalog.html">1</a>
+            <a class="button switcher" href="page-2.html">2</a>
+            <a class="button switcher" href="page-3.html">3</a>
+            <a class="button switcher" href="next-page.html">Следующая</a>
+          </div>
         </div>
       </section>
     </div>
-    <section class="container pagination">
-      <a class="button switcher" href="catalog.html">1</a>
-      <a class="button switcher" href="page-2.html">2</a>
-      <a class="button switcher" href="page-3.html">3</a>
-      <a class="button switcher" href="next-page.html">Следующая</a>
-    </section>
   </main>
   <footer class="main-footer">
     <section class="adress">
@@ -226,16 +228,17 @@
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <h2>Напишите нам</h2>
         <div class="info-input">
-          <div class="write-us-item">
-            <label for="write-us-name">Ваше имя:</label>
-            <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+          <div class="write-wrapper">
+            <div class="write-us-item">
+              <label for="write-us-name">Ваше имя:</label>
+              <input id="write-us-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+            </div>
+            <div class="write-us-item">
+              <label for="write-us-email">Ваш e-mail:</label>
+              <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
+            </div>
           </div>
-          <div class="write-us-item">
-
-            <label for="write-us-email">Ваш e-mail:</label>
-            <input id="write-us-email" type="text" name="email" value="" placeholder="email@example.com">
-          </div>
-          <div class="write-us-item">
+          <div class="write-us-item write-text">
             <label for="write-us-text">Текст письма:</label>
             <input id="write-us-text" type="text" name="write-text" value="" placeholder="В свободной форме">
           </div>
