@@ -381,7 +381,7 @@ a {
 
 .features {
   padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   border-bottom: 2px solid;
   border-color: #eeeeee;
 }
@@ -424,7 +424,7 @@ a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .studio {
@@ -660,7 +660,7 @@ a {
 }
 
 .slider-variator {
-  margin-bottom: 43px;
+  margin-bottom: 63px;
 }
 
 .variator {
@@ -782,7 +782,7 @@ input[type=range]::-ms-track {
 }
 
 .net {
-  margin-bottom: 10px;
+  margin-bottom: 47px;
 }
 
 .net h3 {
@@ -997,8 +997,6 @@ input[type=range]::-ms-track {
   position: absolute;
   bottom: 7px;
   width: 360px;
-  padding-top: 26px;
-  padding-bottom: 34px;
   padding-left: 60px;
   padding-right: 60px;
   margin: 0;
@@ -1018,12 +1016,12 @@ input[type=range]::-ms-track {
 }
 
 .catalog-order h3 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 26px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .catalog-order h3:hover,
@@ -1042,8 +1040,13 @@ input[type=range]::-ms-track {
   font-weight: 400;
   text-transform: none;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: #666666;
+}
+
+.catalog-order .button {
+  width: 200px;
+  margin-bottom: 45px;
 }
 
 .pagination {
