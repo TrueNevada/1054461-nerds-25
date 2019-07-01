@@ -1323,7 +1323,6 @@ input[type=range]::-ms-track {
 
 .write-us-item input::placeholder {
  text-align: top left;
- vertical-align: top;
 }
 
 .write-us-item input:focus {
