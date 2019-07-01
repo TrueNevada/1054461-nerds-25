@@ -52,8 +52,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 55px;
-  margin-bottom: 65px;
+  padding-top: 57px;
+  margin-bottom: 67px;
 }
 
 .button {
@@ -234,8 +234,9 @@ a {
 }
 
 .page-active {
+  padding-bottom: 2px;
   color: #000000;
-  border-bottom: solid;
+  border-bottom: 2px solid;
   border-bottom-color: #fb565a;
 }
 
@@ -627,24 +628,63 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  opacity: 0.3;
-}
-
-.sort-type:hover,
-.sort-type:focus {
-  opacity: 0.6;
-}
-
-.sort-type:active {
   opacity: 1;
 }
 
-.button-up {
-  margin-left: 10px;
+.sort-type a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-type .price-tag {
+  opacity: 1;
+  margin-right: 29px;
+}
+
+.sort-type .type-tag {
+  margin-right: 22px;
+}
+
+.sort-type .name-tag {
+  margin-right: 50px;
+}
+
+.sort-type .type-tag:focus,
+.sort-type .type-tag:hover {
+  opacity: 0.6;
+}
+
+.sort-type .type-tag:active {
+  opacity: 1;
+}
+
+.sort-type .name-tag:focus,
+.sort-type .name-tag:hover {
+  opacity: 0.6;
+}
+
+.sort-type .name-tag:active {
+  opacity: 1;
+}
+
+.sort-type .button-down {
+  opacity: 1;
+}
+
+.sort-type .button-up {
+  margin-left: 12px;
+}
+
+.sort-type .button-up:focus,
+.sort-type .button-up:hover {
+  opacity: 0.6;
+}
+
+.sort-type .button-up:active {
+  opacity: 1;
 }
 
 .filters {
@@ -1279,6 +1319,11 @@ input[type=range]::-ms-track {
   min-height: 50px;
   border: 2px solid;
   border-color: #dfdfdf;
+}
+
+.write-us-item input::placeholder {
+ text-align: top left;
+ vertical-align: top;
 }
 
 .write-us-item input:focus {

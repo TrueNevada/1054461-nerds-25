@@ -34,14 +34,14 @@
       <a class="price">Стоимость:</a>
       <a class="sort">Сортировать:</a>
       <div class="sort-type">
-        <a>По цене</a>
-        <a>По типу</a>
-        <a>По названию</a>
+        <a class="price-tag" href="price.html">По цене</a>
+        <a class="type-tag" href="type.html">По типу</a>
+        <a class="name-tag" href="name.html">По названию</a>
         <div>
-          <a class="button-down">
+          <a class="button-down" href="button-down.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path fill="#231F20" d="M5.5 10L0 0h11" /></svg></a>
-          <a class="button-up">
+          <a class="button-up" href="button-up.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg></a>
         </div>
@@ -50,60 +50,60 @@
     <div class="container inner-page">
       <section class="filters">
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="slider-variator">
-          <div class="variator">
-            <input type="range" min="0" max="15000">
+          <div class="slider-variator">
+            <div class="variator">
+              <input type="range" min="0" max="15000">
+            </div>
+            <div class="variations">
+              <span>От</span>
+              <span>0</span>
+              <span>До</span>
+              <span>15000</span>
+            </div>
           </div>
-          <div class="variations">
-            <span>От</span>
-            <span>0</span>
-            <span>До</span>
-            <span>15000</span>
+          <div class="net">
+            <h3>Сетка:</h3>
+            <ul class="net-filter">
+              <li class="radio">
+                <input id="radio-1" type="radio" name="filter" value="Адаптивная" checked>
+                <label for="radio-1">Адаптивная</label>
+              </li>
+              <li class="radio">
+                <input id="radio-2" type="radio" name="filter" value="Фиксированная">
+                <label for="radio-2">Фиксированная</label>
+              </li>
+              <li class="radio">
+                <input id="radio-3" type="radio" name="filter" value="Резиновая">
+                <label for="radio-3">Резиновая</label>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="net">
-          <h3>Сетка:</h3>
-          <ul class="net-filter">
-            <li class="radio">
-              <input id="radio-1" type="radio" name="filter" value="Адаптивная" checked>
-              <label for="radio-1">Адаптивная</label>
-            </li>
-            <li class="radio">
-              <input id="radio-2" type="radio" name="filter" value="Фиксированная">
-              <label for="radio-2">Фиксированная</label>
-            </li>
-            <li class="radio">
-              <input id="radio-3" type="radio" name="filter" value="Резиновая">
-              <label for="radio-3">Резиновая</label>
-            </li>
-          </ul>
-        </div>
-        <div class="features-net">
-          <h3>Особенности:</h3>
-          <ul class="features-filter">
-            <li class="checkbox">
-              <input id="checkbox-1" type="checkbox" name="slider">
-              <label for="checkbox-1">Слайдер</label>
-            </li>
-            <li class="checkbox">
-              <input id="checkbox-2" type="checkbox" name="block">
-              <label for="checkbox-2">Блок преимуществ</label>
-            </li>
-            <li class="checkbox">
-              <input id="checkbox-3" type="checkbox" name="news">
-              <label for="checkbox-3">Новости</label>
-            </li>
-            <li class="checkbox">
-              <input id="checkbox-4" type="checkbox" name="gallery">
-              <label for="checkbox-4">Галерея</label>
-            </li>
-            <li class="checkbox">
-              <input id="checkbox-5" type="checkbox" name="cart">
-              <label for="checkbox-5">Корзина</label>
-            </li>
-          </ul>
-        </div>
-        <button class="button show-button" type="submit">Показать</button>
+          <div class="features-net">
+            <h3>Особенности:</h3>
+            <ul class="features-filter">
+              <li class="checkbox">
+                <input id="checkbox-1" type="checkbox" name="slider">
+                <label for="checkbox-1">Слайдер</label>
+              </li>
+              <li class="checkbox">
+                <input id="checkbox-2" type="checkbox" name="block">
+                <label for="checkbox-2">Блок преимуществ</label>
+              </li>
+              <li class="checkbox">
+                <input id="checkbox-3" type="checkbox" name="news">
+                <label for="checkbox-3">Новости</label>
+              </li>
+              <li class="checkbox">
+                <input id="checkbox-4" type="checkbox" name="gallery">
+                <label for="checkbox-4">Галерея</label>
+              </li>
+              <li class="checkbox">
+                <input id="checkbox-5" type="checkbox" name="cart">
+                <label for="checkbox-5">Корзина</label>
+              </li>
+            </ul>
+          </div>
+          <button class="button show-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -190,7 +190,7 @@
       <div class="bottom-wrapper">
         <div class="adress-block">
           <h3>Nёrds design studio</h3>
-          <p>191186, Санкт-Петерубрг, ул.Б.Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петерубрг, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="button write-us-link" href="write-us.html">Напишите нам</a>
         </div>
