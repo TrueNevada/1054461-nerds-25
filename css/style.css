@@ -842,7 +842,7 @@ a {
 .features-filter {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #283136;
   margin-bottom: 50px;
   list-style: none;
