@@ -413,7 +413,7 @@ a {
 }
 
 .feature-item p {
-  width: 245px;
+  width: 250px;
   font-weight: 400;
   text-transform: none;
   color: #283136;
@@ -624,7 +624,7 @@ a {
 }
 
 .sort-type {
-  width: 360px;
+  width: 361px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -692,7 +692,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-right: 140px;
+  margin-right: 139px;
 }
 
 .filters h3 {
@@ -700,7 +700,7 @@ a {
 }
 
 .slider-variator {
-  margin-bottom: 63px;
+  margin-bottom: 61px;
 }
 
 .variator {
@@ -714,8 +714,29 @@ a {
 
 .variator input {
   position: absolute;
-  bottom: 38px;
+  bottom: 40px;
   left: 20px;
+}
+
+.variator input::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  bottom: -8px;
+}
+
+.variator input::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ababab;
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
 }
 
 .variator input[type=range] {
