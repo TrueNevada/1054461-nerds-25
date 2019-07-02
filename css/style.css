@@ -822,7 +822,7 @@ a {
 .net-filter {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #283136;
   list-style: none;
   padding: 0;
@@ -831,7 +831,7 @@ a {
 .net-filter label {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   color: #283136;
 }
 
