@@ -841,6 +841,13 @@ input[type=range]::-ms-track {
   padding: 0;
 }
 
+.net-filter label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: #283136;
+}
+
 .net-filter li {
   margin-bottom: 20px;
 }
@@ -854,6 +861,14 @@ input[type=range]::-ms-track {
   list-style: none;
   padding: 0;
 }
+
+.features-filter label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: #283136;
+}
+
 
 .radio {
   padding: 0;
